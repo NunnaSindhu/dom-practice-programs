@@ -20,3 +20,11 @@ let data=document.getElementById("heading");
         
     }
 
+let button=document.querySelector(".btn");
+button.addEventListener("click",function(){
+    let item=document.createElement("LI");
+    let text=document.querySelector(".itemname").value;
+    item.append(text);
+    document.querySelector(".list").appendChild(item);
+})
+
